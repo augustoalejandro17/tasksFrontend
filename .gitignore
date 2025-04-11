@@ -10,6 +10,7 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
@@ -21,3 +22,29 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Cache
+.eslintcache
+.npm
+.cache
+.parcel-cache
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# AWS deployment files
+bucket-policy.json
+cloudfront-distribution.json
+.env.production
+
+# Build artifacts
+build.zip
+
+# CloudFront invalidation logs
+invalidation-*.json
