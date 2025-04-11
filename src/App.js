@@ -33,12 +33,7 @@ const theme = createTheme({
 
 // Protected route component
 const ProtectedRoute = ({ children }) => {
-  const isAuthenticated = authService.isAuthenticated();
-  
-  if (!isAuthenticated) {
-    return <Navigate to="/login" replace />;
-  }
-  
+  // Always return children without checking authentication
   return children;
 };
 
